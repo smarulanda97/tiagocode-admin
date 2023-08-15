@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "981909b12e2dff451bd17cfd4a26f3ec",
+    "content-hash": "4d3db12b961c98b10ed83e3365ed9e58",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -5899,13 +5899,13 @@
             "version": "dev-1.6-l10",
             "source": {
                 "type": "git",
-                "url": "https://github.com/the-control-group/voyager.git",
-                "reference": "a74198baf70f26ca6aa02723aea39a03cc45b043"
+                "url": "https://github.com/smarulanda97/tiagocode-voyager.git",
+                "reference": "03a348cd0a0d151d02accfce3eba8f30ad670887"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/the-control-group/voyager/zipball/a74198baf70f26ca6aa02723aea39a03cc45b043",
-                "reference": "a74198baf70f26ca6aa02723aea39a03cc45b043",
+                "url": "https://api.github.com/repos/smarulanda97/tiagocode-voyager/zipball/03a348cd0a0d151d02accfce3eba8f30ad670887",
+                "reference": "03a348cd0a0d151d02accfce3eba8f30ad670887",
                 "shasum": ""
             },
             "require": {
@@ -5913,7 +5913,7 @@
                 "doctrine/dbal": "^3.1|^3.5",
                 "ext-json": "*",
                 "illuminate/support": "~8.0|~9.0|~10.0",
-                "intervention/image": "^2.4",
+                "intervention/image": "^2.7",
                 "laravel/ui": ">=1.0",
                 "league/flysystem": "~1.1|~2.0|~3.0",
                 "php": "^7.3|^7.4|^8.0"
@@ -5940,7 +5940,18 @@
                     "TCG\\Voyager\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "TCG\\Voyager\\Tests\\": "tests/",
+                    "TCG\\Voyager\\Tests\\Database\\Factories\\": "tests/database/factories/",
+                    "Database\\Seeders\\": "vendor/orchestra/testbench-core/laravel/database/seeders"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php vendor/bin/testbench package:discover --ansi"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -5963,19 +5974,19 @@
             },
             "funding": [
                 {
-                    "url": "https://github.com/emptynick",
-                    "type": "github"
+                    "type": "github",
+                    "url": "https://github.com/tnylea"
                 },
                 {
-                    "url": "https://github.com/fletch3555",
-                    "type": "github"
+                    "type": "github",
+                    "url": "https://github.com/fletch3555"
                 },
                 {
-                    "url": "https://github.com/tnylea",
-                    "type": "github"
+                    "type": "github",
+                    "url": "https://github.com/emptynick"
                 }
             ],
-            "time": "2023-03-01T08:00:56+00:00"
+            "time": "2023-04-06T14:24:22+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -7239,16 +7250,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.3.1",
+            "version": "10.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "d442ce7c4104d5683c12e67e4dcb5058159e9804"
+                "reference": "0dafb1175c366dd274eaa9a625e914451506bcd1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d442ce7c4104d5683c12e67e4dcb5058159e9804",
-                "reference": "d442ce7c4104d5683c12e67e4dcb5058159e9804",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/0dafb1175c366dd274eaa9a625e914451506bcd1",
+                "reference": "0dafb1175c366dd274eaa9a625e914451506bcd1",
                 "shasum": ""
             },
             "require": {
@@ -7320,7 +7331,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.3.1"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.3.2"
             },
             "funding": [
                 {
@@ -7336,7 +7347,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-08-04T06:48:08+00:00"
+            "time": "2023-08-15T05:34:23+00:00"
         },
         {
             "name": "sebastian/cli-parser",

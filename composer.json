@@ -64,6 +64,10 @@
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
-    "repositories": {
-    }
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/smarulanda97/tiagocode-voyager.git"
+        }
+    ]
 }
